@@ -26,12 +26,10 @@ public class MultipleThread implements Runnable{
         MultipleThread myThread1 = new MultipleThread("One");
         MultipleThread myThread2 = new MultipleThread("Two");
         MultipleThread myThread3 = new MultipleThread("Three");
-        MultipleThread myThread4 = new MultipleThread("Four");
 
         myThread1.thread.start();
         myThread2.thread.start();
         myThread3.thread.start();
-        myThread4.thread.start();
 
         try {
             Thread.sleep(10000);
